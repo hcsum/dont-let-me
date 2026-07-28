@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "mentor",
+  "name": "dont-let-me",
   "description": "A mentor stance for Claude Code — goals, an honest anti-list, and a todo surface that pushes back.",
   "owner": {
     "name": "Haochen Xu",

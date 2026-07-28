@@ -87,7 +87,7 @@ Capture is unconditional. Priority is where it gets ruthless.
 
 ```
 /plugin marketplace add hcsum/dont-let-me
-/plugin install mentor@mentor
+/plugin install mentor@dont-let-me
 /mentor:init
 ```
 
