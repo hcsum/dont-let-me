@@ -91,9 +91,27 @@ Capture is unconditional. Priority is where it gets ruthless.
 /mentor:init
 ```
 
-`/mentor:init` interviews you and writes `~/.claude/mentor/profile.md`. It takes
-about ten minutes and pushes back if your goals are vague. Restart your session
-afterward — the profile loads at session start.
+`/mentor:init` interviews you for about ten minutes — it asks one question at a
+time and pushes back if your goals are vague. It writes
+`~/.claude/mentor/profile.md`, and that's the whole setup.
+
+### Then just talk to it
+
+Open a new session and say hi. Mine noticed I had a profile but no todo list yet
+and offered to start one, which is about right: from here on there's nothing to
+remember. Tell it what you're working on, throw it something you don't want to
+lose, ask what to do next. It keeps the list, and when you ask it collapses the
+whole thing into two or three fronts and commits to one pick rather than reading
+your list back at you.
+
+You don't have to start the conversation, either. The stance loads into every
+session, so it's reading along while you do unrelated work, and it speaks up at
+checkpoints — when you finish something, when you're choosing between
+directions, when you've been circling the same thing for a while. One nudge per
+pattern, and you can wave it off.
+
+The only command worth remembering is `/mentor:check`, when you want the
+alignment check on demand instead of waiting for it to notice.
 
 ## The list sharpens itself
 
@@ -121,23 +139,6 @@ doesn't recur. After a few months an entry looks like:
 ```
 
 Which is not something you could have written on day one.
-
-## What you get
-
-**Always on.** A SessionStart hook injects the stance and your profile into every
-session. It stays quiet during focused work and speaks up at checkpoints: when
-you finish something, when you're choosing between directions, when you ask, or
-when you're visibly circling. At most one nudge per pattern per conversation.
-
-**`/mentor:check`** — on-demand: reads your todos, recent commits, and this
-session, groups your work into fronts, maps them onto your goals, checks the
-don't-let-me list, and recommends exactly one next action with its first physical
-step.
-
-**The `todos` skill** — maintains a todo file (`~/.claude/mentor/todos.md` by
-default) with daily blocks, active/backlog/done, and next-day carryover. It
-triggers on its own when you say "add X to my todo" or "what should I do next."
-It won't read your list back to you flat; it collapses it and commits to one pick.
 
 ## Files
 
