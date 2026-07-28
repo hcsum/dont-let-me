@@ -157,7 +157,9 @@ yourself.
 
 The packaging is Claude Code specific; the content isn't. `stance.md` plus your
 `profile.md` pasted into an `AGENTS.md` gets you most of the way in other agents.
-You lose the automatic injection, so you'd keep a copy per project.
+Codex and OpenCode both read a global instructions file that every project
+inherits, so one copy covers everything — you just lose `/mentor:init` and the
+todo skill's automatic triggering.
 
 ---
 
