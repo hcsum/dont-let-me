@@ -114,9 +114,6 @@ what should I do next
 I finished the auth rewrite
 ```
 
-Open a new session and say hi — mine noticed I had a profile but no todo list
-yet and offered to start one.
-
 One command exists, `/mentor:check`, for when you want the alignment check now
 instead of waiting to be noticed.
 
