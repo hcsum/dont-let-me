@@ -1,6 +1,6 @@
 {
   "name": "mentor",
-  "description": "A mentor stance for Claude Code. Keeps your north-star goals and your own don't-let-me list in every session, maintains a todo surface, and tells you when the thing you're about to do is avoidance.",
+  "description": "A mentor in Claude Code. Keeps your long-term goals and your own anti-patterns in every session, holds your todos, and gives you one thing at a time.",
   "version": "0.1.0",
   "author": {
     "name": "Haochen Xu"
