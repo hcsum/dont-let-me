@@ -95,23 +95,30 @@ Capture is unconditional. Priority is where it gets ruthless.
 time and pushes back if your goals are vague. It writes
 `~/.claude/mentor/profile.md`, and that's the whole setup.
 
-### Then just talk to it
+## Start using it
 
-Open a new session and say hi. Mine noticed I had a profile but no todo list yet
-and offered to start one, which is about right: from here on there's nothing to
-remember. Tell it what you're working on, throw it something you don't want to
-lose, ask what to do next. It keeps the list, and when you ask it collapses the
-whole thing into two or three fronts and commits to one pick rather than reading
-your list back at you.
+There's nothing to remember. Two ways it shows up.
 
-You don't have to start the conversation, either. The stance loads into every
-session, so it's reading along while you do unrelated work, and it speaks up at
-checkpoints — when you finish something, when you're choosing between
-directions, when you've been circling the same thing for a while. One nudge per
-pattern, and you can wave it off.
+**It's already watching.** The stance loads into every session, so it reads along
+while you do unrelated work and speaks up at checkpoints — you finish something,
+you're picking between directions, you've been circling the same thing for an
+hour. One nudge per pattern, and you can wave it off.
 
-The only command worth remembering is `/mentor:check`, when you want the
-alignment check on demand instead of waiting for it to notice.
+**Or just say something.** Anything todo-shaped wakes the `todos` skill; the
+mentor itself is always there and answers to being talked to.
+
+```
+what up mentor
+add a todo: ship the landing page
+what should I do next
+I finished the auth rewrite
+```
+
+Open a new session and say hi — mine noticed I had a profile but no todo list
+yet and offered to start one.
+
+One command exists, `/mentor:check`, for when you want the alignment check now
+instead of waiting to be noticed.
 
 ## The list sharpens itself
 
