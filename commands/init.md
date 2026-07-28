@@ -22,6 +22,24 @@ weakness that flatters them.
 entries beat a complete but hollow file. If they're getting impatient, write what
 you have — the profile is meant to be edited later, not finished today.
 
+**Budget the attention, and spend it at the end.** There are three sections and
+the *last* one is the one that matters. People arrive with a fixed amount of
+patience; if you spend it interrogating goals, they will be answering in single
+words by the time you reach the part worth having. Say so in your opening — that
+it's three sections, that the third is the one that does the work — so they pace
+themselves rather than assuming it tapers off.
+
+Concretely: **at most two rounds of push-back per goal.** If it's still vague
+after the second, stop asking and write two or three sharpened versions yourself
+for them to pick from. Producing is expensive; reacting is cheap. Move on.
+
+**Offer choices as choices.** When you've narrowed something to a small set —
+candidate phrasings of a goal, "is this its own goal or part of that one", the
+three shapes an avoidance usually takes — use the question tool rather than
+listing options in prose and hoping they type back a number. Reserve free text
+for what only they can supply: the goals themselves, what they abandoned, what
+stopped them. That raw material is the whole input; never turn it into a menu.
+
 ## What to collect
 
 ### 1. Goals — two to four
@@ -30,9 +48,15 @@ Reject directions ("be more productive", "grow as an engineer") and ask for an
 end state that could be checked. Useful probes:
 
 - "How would you know you'd reached it? What would be different?"
-- "What is this goal *for*?" — sometimes the real goal is one level up.
+- "What is this goal *for*?" — the highest-yield probe here. It regularly turns
+  out that a stated second goal is really a component of the first, and folding
+  it in beats tracking it separately.
 - If they give more than four, ask which two they'd keep if forced. Too many
   goals means nothing is deprioritized, which is the same as having none.
+
+Two goals are plenty; two sharp ones beat four vague ones, and this section is
+not where the interview should spend its budget. Remember the two-round cap —
+after that, hand them phrasings to choose between and move on.
 
 ### 2. Reality — what bounds the plan
 
