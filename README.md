@@ -13,7 +13,7 @@ start. Lists, Notion, calendars, "second brain" setups — each worked for about
 two weeks.
 
 What finally changed something wasn't a better list. It was writing down two
-documents and handing them to the agent I already use every day:
+documents and handing them to the agent I already use every day.
 
 **My actual goals.** Three of them, each with an end state you could check.
 
@@ -22,20 +22,12 @@ documents and handing them to the agent I already use every day:
 ```
 - [config] don't let me sink into environment tweaking — zero risk,
   instant feedback, never finishes, serves nothing
-  - signal: a five-minute adjustment turning into forty rounds of fiddling
 
 - [explore] don't let me keep opening new exploratory threads while
   nothing is finished
-  - signal: `done` is empty and `active` has eight items
 
-- [ship] don't let me build in private forever
-  - signal: "it's not ready yet" about something that has been working
-    for two weeks
+- [ship] don't let me build in private forever, waiting for it to be ready
 ```
-
-Each entry needs a **signal** — the observable thing that means it's happening
-*right now*. Without it, an agent can't tell the pattern apart from real work.
-"Don't let me procrastinate" is unusable. The version above is not.
 
 Some real things it has said to me:
 
@@ -45,10 +37,11 @@ Some real things it has said to me:
 That was about a piece of government paperwork that had slipped four days
 running. Each day I'd had a reason. It was correct and I hated it.
 
-Another evening I'd spent an hour adjusting the color of a single dot in my shell
-prompt. It pointed out that's on my own don't-let-me list, and asked which of my
-three goals it served. I knew the answer. Knowing it and having something say it
-out loud are different things.
+Another evening I'd spent an hour on a single dot in my shell prompt — the
+color, then the size, then whether it should be hollow or filled, then how far
+it sat from the cursor. It pointed out that's on my own don't-let-me list, and
+asked which of my three goals it served. I knew the answer. Knowing it and
+having something say it out loud are different things.
 
 ## What's actually new here
 
@@ -57,6 +50,39 @@ being honest, so it could hold me to them later when I wasn't.**
 
 That's the whole mechanism. It only works if the second list is the honest
 version — a flattering one just gets you an assistant that agrees with you.
+
+## What it can and can't see
+
+Worth saying plainly, because it's the first thing that will disappoint you
+otherwise: **it sees your Claude sessions, your todo file, and your commits. It
+does not see the rest of your day.** Spend an afternoon avoiding something in
+another window and it will have no idea. This is built for people who already do
+most of their work with Claude in front of them.
+
+But observation turns out not to be where the signal is. The paperwork nudge
+above didn't come from watching me — it came from the same item sitting
+unchecked in four consecutive daily blocks. **What you said you'd do, versus
+what closed, is behavioural evidence.** It holds even when you never say a word
+about avoiding anything, and it's usually more damning than anything you'd catch
+live.
+
+## It catches everything you throw at it
+
+A mentor that pushes back sounds like it should also stop you starting things. It
+doesn't, deliberately.
+
+Bring it a new project at midnight and it takes it, no argument, no "are you sure
+this serves your goals." Then it does the useful part: tells you which goal it
+serves, or says it serves none and puts it low, and folds it in with the three
+other things you started that were secretly the same thing.
+
+The gatekeeping version doesn't work. A list that argues with new ideas is a list
+you stop telling things to — and then it's lost the record of what you said you'd
+do, which is the only real evidence it had. Ideas that look like drift also have
+a habit of converging six months later; the moment of capture is the worst
+possible time to judge.
+
+Capture is unconditional. Priority is where it gets ruthless.
 
 ## Install
 
@@ -69,6 +95,33 @@ version — a flattering one just gets you an assistant that agrees with you.
 `/mentor:init` interviews you and writes `~/.claude/mentor/profile.md`. It takes
 about ten minutes and pushes back if your goals are vague. Restart your session
 afterward — the profile loads at session start.
+
+## The list sharpens itself
+
+You'll notice the template mentions two optional lines per entry:
+
+```
+- signal: what it looks like from outside, the moment it's happening
+- unless: when doing this is legitimately the right call
+```
+
+**Onboarding doesn't ask you for these**, on purpose. Nobody can describe the
+signal for a trap they haven't been caught in yet — you'd invent a generality,
+and a vague signal makes the agent speak up at the wrong moments.
+
+They get written from use instead. When a nudge lands, what just happened *is*
+the signal, and you're offered a line. When a nudge misses and you say "no, that
+was real work," that's an `unless`, in your own words, so the same false positive
+doesn't recur. After a few months an entry looks like:
+
+```
+- [agent] don't let me endlessly tinker with the agent itself — prompts,
+  config, architecture — as avoidance
+  - signal: a five-minute change turning into forty rounds of adjustment
+  - unless: it directly unblocks a north-star task
+```
+
+Which is not something you could have written on day one.
 
 ## What you get
 
@@ -90,27 +143,26 @@ It won't read your list back to you flat; it collapses it and commits to one pic
 ## Files
 
 ```
-~/.claude/mentor/profile.md   your goals, constraints, shortcomings, anti-list
+~/.claude/mentor/profile.md   your goals, your reality, your don't-let-me list
 ~/.claude/mentor/todos.md     the todo surface (path configurable in profile.md)
 ```
 
 Both are plain markdown on your machine. Nothing is sent anywhere, and nothing is
-written to your `CLAUDE.md` — uninstalling the plugin leaves no trace but those
-two files. Set `MENTOR_HOME` to relocate them.
+written to your `CLAUDE.md` — uninstalling leaves no trace but those two files.
+Set `MENTOR_HOME` to relocate them. Edit them by hand any time; the don't-let-me
+list is the one worth revisiting, since you keep learning new ways to fool
+yourself.
 
-Edit them by hand any time. The anti-list is the one worth revisiting — you learn
-new ways to fool yourself.
-
-## Doesn't use Claude Code?
+## Using another agent
 
 The packaging is Claude Code specific; the content isn't. `stance.md` plus your
 `profile.md` pasted into an `AGENTS.md` gets you most of the way in other agents.
 You lose the automatic injection, so you'd keep a copy per project.
 
-## Not writing code?
+---
 
-I'm building the same idea as a plain web app for people who don't live in a
-terminal: **[One Thing at a Time](https://onethingatatime.app)**.
+I'm also building the same idea as a standalone web app:
+[One Thing at a Time](https://onethingatatime.app).
 
 ## License
 

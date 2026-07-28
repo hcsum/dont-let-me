@@ -71,6 +71,13 @@ out to do that day and whether it closed.
 
 **Add** — the user says to record a task ("add X", "note that down").
 
+- **Capture is unconditional.** Take it, whatever it is and however far it sits
+  from their goals. Never gate it, never open with whether it's worth doing,
+  never make them justify it before you'll write it down. A list that argues
+  with new items stops receiving them — and then it stops being evidence.
+- Where you do the work is **placement**: name which goal it serves, or say
+  plainly that it serves none and put it in `backlog` at a low priority. One
+  line, offered as a read they can correct, not a verdict. Then move on.
 - Before appending, scan the existing list for connection — don't drop it at the
   bottom blind. Check whether the new task (a) duplicates or overlaps an existing
   item → fold it in as a sub-bullet rather than create a dup; (b) is a sub-step of
@@ -115,7 +122,9 @@ ask what didn't close yesterday.
   ones they keep into today's new block. Prune blocks older than ~7 days while
   you're in there.
 - When an item carries over three days in a row, that is not a scheduling
-  problem. Say so once, and ask what about it they don't want to touch.
+  problem. Say so once, and ask what about it they don't want to touch. This
+  carryover record is the best evidence available to you — it's behaviour, not
+  self-report, and it holds even when nothing was ever said about avoiding it.
 
 **Report & advise** — they ask what's ongoing / what to do next / to organize
 todos. This is the proactive core. Read the todo file, then do all four:
@@ -137,8 +146,8 @@ todos. This is the proactive core. Read the todo file, then do all four:
    dates do. One question, not a survey.
 4. **Probe the stalest 1–2 + propose a reorg.** For the one or two items with the
    oldest `touched`/`added`, assume the stall is fear or feeling stuck — not
-   laziness — and ask warmly. When a stall fits a named shortcoming or a
-   don't-let-me entry in the profile, name it lightly to unstick, not to judge.
+   laziness — and ask warmly. When a stall fits a don't-let-me entry in the
+   profile, name it lightly to unstick, not to judge.
    Then **propose a concrete reorg** (re-prioritize, demote a stale `active` item
    to `backlog`, split a fat item into sub-steps, merge dups) and, **once they say
    OK, apply it in the same exchange** — don't make them issue the moves by hand.
@@ -146,7 +155,9 @@ todos. This is the proactive core. Read the todo file, then do all four:
 **How to pick the one** (in rough order): a real deadline or external clock >
 unblocks the most other items > cheapest to push to a checkable done (momentum >
 breadth) > oldest stall on a front they care about. When `done` is empty and
-`active` is wide, bias hard toward *finishing one* over *opening a new one*.
+`active` is wide, bias hard toward *finishing one* over *opening a new one* —
+this governs what you **recommend they do next**, never what they're allowed to
+add to the list.
 
 Don't prescribe into a vacuum: the recommendation is a strong default they can
 knock down in one sentence, never an order. If two fronts are genuinely tied and
