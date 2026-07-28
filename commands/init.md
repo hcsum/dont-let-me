@@ -22,12 +22,12 @@ weakness that flatters them.
 entries beat a complete but hollow file. If they're getting impatient, write what
 you have — the profile is meant to be edited later, not finished today.
 
-**Budget the attention, and spend it at the end.** There are three sections and
-the *last* one is the one that matters. People arrive with a fixed amount of
-patience; if you spend it interrogating goals, they will be answering in single
-words by the time you reach the part worth having. Say so in your opening — that
-it's three sections, that the third is the one that does the work — so they pace
-themselves rather than assuming it tapers off.
+**Budget the attention.** People arrive with a fixed amount of patience, and the
+expensive section is the second one — the don't-let-me list. Spend the budget
+interrogating goals and they'll be answering in single words by the time you
+reach the part worth having. The third section is deliberately the cheap one, so
+running low by then costs nothing. Say this in your opening: three sections, the
+middle one is where the work happens, the last one is quick.
 
 Concretely: **at most two rounds of push-back per goal.** If it's still vague
 after the second, stop asking and write two or three sharpened versions yourself
@@ -58,26 +58,28 @@ Two goals are plenty; two sharp ones beat four vague ones, and this section is
 not where the interview should spend its budget. Remember the two-round cap —
 after that, hand them phrasings to choose between and move on.
 
-### 2. Reality — what bounds the plan
+### 2. Don't let me — the load-bearing section
 
-Two kinds of thing go here.
+Ask this second, while they still have patience. It is the only section that
+does real work, and it is the most expensive to answer honestly.
 
-**Hard constraints:** runway, focused hours actually available per day, external
-deadlines, obligations. Ask directly — "if you did nothing but this, how long
-could you go?" and "realistically, how many focused hours a day do you get?" If a
-stated goal is impossible under a stated constraint, say so now rather than in
-six months.
+Behaviours an agent could watch happen and interrupt. The sorting rule: **can it
+be caught in the act?** An hour of config tweaking, yes. Being short on
+confidence, no — that's a standing trait, and it belongs in Reality.
 
-**Standing traits** that shape how advice should land: low confidence, losing the
-thread, stalls that are usually fear rather than laziness. These are conditions
-to work with, not faults to fix — which is exactly why they go here and not in
-the next section.
+**Open with the trait, then move to the behaviour.** Asking someone to name a
+standing trait ("is there a background condition that shapes how you work —
+losing the thread, self-doubt, stalls that are really fear rather than
+laziness?") is easier than asking them to confess a pattern, and it warms up the
+disclosure. Watch for the answer that's actually catchable in the act: "I switch
+to the easy part whenever it gets hard" arrives phrased as a trait but is a
+don't-let-me entry. Take it as one. File the genuinely uncatchable residue under
+Reality when you write the file — elicited here, filed there.
 
-### 3. Don't let me — the load-bearing section
-
-Behaviours an agent could watch happen and interrupt. The sorting rule against
-Reality: **can it be caught in the act?** An hour of config tweaking, yes. Being
-short on confidence, no.
+If they answer a trait question with a single dismissive word — "lazy" is the
+common one — don't accept it. It's almost always the shell on something more
+specific. Ask what it looks like, or offer the two or three shapes it usually
+takes and let them pick.
 
 The productive question is not "what are your bad habits." It is:
 
@@ -109,11 +111,30 @@ Before writing, say this plainly:
 
 It stays local — a file on their machine, read by their own sessions.
 
+### 3. Reality — what bounds the plan
+
+Last on purpose: this is the cheapest section to answer, so it's the one that
+survives a tired person. It's factual, not introspective.
+
+Runway, focused hours actually available per day, external deadlines,
+obligations. Ask directly — "if you did nothing but this, how long could you
+go?" and "realistically, how many focused hours a day do you get?" Take the
+second answer seriously: if they claim four hours on a weekday, ask how many
+days last week they actually managed it.
+
+Then do the arithmetic out loud. If the hours don't fit the goals, say so now
+rather than in six months, and propose a sequencing — one goal first, the other
+starting later — rather than quietly writing down two goals that can't both
+happen.
+
+Any standing traits that surfaced during the previous section get filed here too.
+
 ## Writing the file
 
-Use `${CLAUDE_PLUGIN_ROOT}/templates/profile.md` as the structure. Preserve the
-`todo_file:` line; ask where they want it if they'd rather not use the default
-`~/.claude/mentor/todos.md`.
+Use `${CLAUDE_PLUGIN_ROOT}/templates/profile.md` as the structure — note its
+section order is Goals, Reality, Don't let me, which is the order that reads
+best, not the order you asked in. Preserve the `todo_file:` line; ask where they
+want it if they'd rather not use the default `~/.claude/mentor/todos.md`.
 
 Write it in **their own words**, not cleaned-up coaching language — they have to
 recognize themselves in it a year from now.
