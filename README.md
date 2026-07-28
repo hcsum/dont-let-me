@@ -80,6 +80,11 @@ Probably most useful if you have ADHD tendencies, or something near them — you
 fall into rabbit holes and can't climb out, you start five things and finish
 none. That's what I built it around.
 
+It works best if Claude Code is already where your work starts — research,
+writing, coding, planning a video — because then it sees what you actually did,
+not just what you told it. If it isn't, it still works; it just runs on what you
+tell it.
+
 ## Files
 
 ```
