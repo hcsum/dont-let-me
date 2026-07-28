@@ -86,7 +86,7 @@ Capture is unconditional. Priority is where it gets ruthless.
 ## Install
 
 ```
-/plugin marketplace add haochenxu/mentor-plugin
+/plugin marketplace add hcsum/dont-let-me
 /plugin install mentor@mentor
 /mentor:init
 ```

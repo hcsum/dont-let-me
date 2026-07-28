@@ -3,7 +3,8 @@
   "name": "mentor",
   "description": "A mentor stance for Claude Code — goals, an honest anti-list, and a todo surface that pushes back.",
   "owner": {
-    "name": "Haochen Xu"
+    "name": "Haochen Xu",
+    "url": "https://github.com/hcsum"
   },
   "plugins": [
     {
