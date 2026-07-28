@@ -35,39 +35,36 @@ going to look at that leaderboard bug today
 
 It keeps them, and it keeps the dates.
 
-## What it does with the two
+## What it does day to day
 
-Long lists make me freeze instead of start, so it doesn't hand the list back. It
-gives you one thing, and the first move on it small enough to start now.
-
-It remembers what you said yesterday and didn't close, and asks about it.
-
-It knows an item has been sitting for a month, not for four days.
-
-And when what you're doing is on your own don't-let-me list, it says so.
-
-## A brain dump todo list
-
-Tell Claude a fleeting idea or a half-formed todo and it writes it to
-`todos.md`. No form, no triage, no "are you sure this serves your goals."
-
-Ideas pop up at random and they're gone if they have to wait — an ADHD tendency
-I stopped fighting. So capture has no gate.
+Tell it a fleeting idea or a half-formed todo and it writes it to `todos.md`.
+There is no form and no gate — ideas pop up at random and they're gone if they
+have to wait, an ADHD tendency I stopped fighting.
 
 The sorting happens after. It files the item against your goals, gives it a
 priority, and folds it in with the three other things you started that turned
 out to be the same thing. If it serves none of your goals it says so, and puts
 it low.
 
-Capture is unconditional. Priority is where it gets ruthless.
+Long lists make me freeze instead of start, so when you go over your todos it
+picks out the few that serve your main goals, and names the first move on one of
+them, small enough to start now.
+
+It tracks when each item was last touched and goes after whatever has sat
+longest. When the same thing keeps carrying over day after day, it treats that
+as avoidance rather than a scheduling problem.
+
+And when what you're doing is on your own don't-let-me list, it says so.
 
 ## Who it's for
 
-It works best if Claude Code or the desktop app is already where your work
-starts — research, writing, coding, planning a video, whatever it is.
+Probably most useful if you have ADHD tendencies, or something near them — you
+fall into rabbit holes and can't climb out, you hyperfocus on the wrong thing
+all day, you start five things and finish none. That's what I built it around.
 
-If it isn't, it still works. It just runs on what you tell it rather than what
-it sees.
+It also works best if Claude Code or the desktop app is already where your work
+starts — research, writing, coding, planning a video. If it isn't, it still
+works; it just runs on what you tell it rather than what it sees.
 
 ## Install
 
