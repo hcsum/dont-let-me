@@ -8,9 +8,8 @@ doing against them.
 
 ## The idea
 
-I don't have a diagnosis, but long todo lists reliably make me freeze instead of
-start. Lists, Notion, calendars, "second brain" setups — each worked for about
-two weeks.
+Long todo lists reliably make me freeze instead of start. Lists, Notion,
+calendars, "second brain" setups — each worked for about two weeks.
 
 What finally changed something wasn't a better list. It was writing down two
 documents and handing them to the agent I already use every day.
