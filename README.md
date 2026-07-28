@@ -12,13 +12,13 @@ own way, written down while you're still being honest about them, so it can hold
 you to them later when you're not:
 
 ```
-- [config] don't let me sink into environment tweaking — zero risk,
-  instant feedback, never finishes, serves nothing
+- [ship] don't let me build in private forever, waiting for it to be ready
 
 - [explore] don't let me keep opening new exploratory threads while
   nothing is finished
 
-- [ship] don't let me build in private forever, waiting for it to be ready
+- [config] don't let me spend another evening on my terminal colours —
+  zero risk, instant feedback, never finishes, serves nothing
 ```
 
 `/mentor:init` interviews you for it once, then you rarely touch it again.
