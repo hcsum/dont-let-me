@@ -1,5 +1,5 @@
 ---
-name: mentor
+name: todos
 description: Maintain the user's todo list — capture new todos, capture today's stated plan as a dated daily block and carry unfinished items to the next day, log what they've actually been doing and check it against their goals, report a consolidated view of what's ongoing, and update items as they report progress. Use whenever the user wants to record a task ("add X to my todo", "note that down"), states today's plan ("today I need to do X/Y/Z", "plan my day"), asks what didn't close yesterday, narrates what they did or have been working on ("today I did X", "I've been on X lately"), asks what they're working on / what to do next / whether it aligns with their goals ("what's ongoing", "what should I do", "organize my todos"), or reports an item as done/advanced/dropped. Local and manual — the user drives it.
 ---
 

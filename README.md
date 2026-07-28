@@ -134,7 +134,7 @@ session, groups your work into fronts, maps them onto your goals, checks the
 don't-let-me list, and recommends exactly one next action with its first physical
 step.
 
-**The `mentor` skill** — maintains a todo file (`~/.claude/mentor/todos.md` by
+**The `todos` skill** — maintains a todo file (`~/.claude/mentor/todos.md` by
 default) with daily blocks, active/backlog/done, and next-day carryover. It
 triggers on its own when you say "add X to my todo" or "what should I do next."
 It won't read your list back to you flat; it collapses it and commits to one pick.
