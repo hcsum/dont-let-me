@@ -57,6 +57,10 @@ want the alignment check on demand.
 
 </details>
 
+In my own use, Claude Code is where this works best. Codex and OpenCode both run
+it, but how well the nudges land depends on the model behind them, and I've had
+better results with Claude.
+
 ## 1. It interviews you
 
 Setup asks you questions, one at a time, for about ten minutes. Run `/mentor:init`
