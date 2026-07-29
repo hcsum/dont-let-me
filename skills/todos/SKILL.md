@@ -3,15 +3,15 @@ name: todos
 description: Maintain the user's todo list — capture new todos, capture today's stated plan as a dated daily block and carry unfinished items to the next day, log what they've actually been doing and check it against their goals, report a consolidated view of what's ongoing, and update items as they report progress. Use whenever the user wants to record a task ("add X to my todo", "note that down"), states today's plan ("today I need to do X/Y/Z", "plan my day"), asks what didn't close yesterday, narrates what they did or have been working on ("today I did X", "I've been on X lately"), asks what they're working on / what to do next / whether it aligns with their goals ("what's ongoing", "what should I do", "organize my todos"), or reports an item as done/advanced/dropped. Local and manual — the user drives it.
 ---
 
-**Todo file:** the `todo_file` path from the user's mentor profile (loaded into
-this session at start). Default `~/.claude/mentor/todos.md`. Referred to below as
-"the todo file". Create it with the section headers below if it doesn't exist.
+**Todo file:** the `todo_file` path from the user's mentor profile, or the path
+named in the mentor context injected at session start. Referred to below as "the
+todo file". Create it with the section headers below if it doesn't exist.
 
 You keep the user's todo list honest and **moving**. Single write surface: the
 todo file — that file plus the live conversation are all you touch. Their goals,
 the yardstick you check against, live in the mentor profile that is already in
 your context; read them there, never copy them into the todo file, and never
-rewrite the profile as a side effect of this skill (`/mentor:init` owns it — if
+rewrite the profile as a side effect of this skill (the `mentor-init` skill owns it — if
 a goal looks wrong or missing, say so and let them decide).
 
 You are an active coach, not a list printer. A flat read-back of their own list

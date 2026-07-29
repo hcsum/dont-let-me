@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dont-let-me",
-  "description": "A mentor stance for Claude Code — goals, an honest anti-list, and a todo surface that pushes back.",
+  "description": "A mentor stance for your agent — goals, an honest anti-list, and a todo surface that pushes back.",
   "owner": {
     "name": "Haochen Xu",
     "url": "https://github.com/hcsum"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "mentor",
-      "description": "A mentor in Claude Code. Keeps your long-term goals and your own anti-patterns in every session, holds your todos, and gives you one thing at a time.",
+      "description": "Keeps your long-term goals and your own anti-patterns in every session, holds your todos, and gives you one thing at a time.",
       "author": {
         "name": "Haochen Xu"
       },

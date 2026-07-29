@@ -1,0 +1,38 @@
+{
+  "name": "mentor",
+  "version": "0.1.0",
+  "description": "Keeps your long-term goals and your own anti-patterns in every session, holds your todos, and gives you one thing at a time.",
+  "author": {
+    "name": "Haochen Xu",
+    "url": "https://github.com/hcsum"
+  },
+  "homepage": "https://github.com/hcsum/dont-let-me",
+  "repository": "https://github.com/hcsum/dont-let-me",
+  "license": "MIT",
+  "keywords": [
+    "productivity",
+    "todo",
+    "focus",
+    "accountability",
+    "adhd"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Mentor",
+    "shortDescription": "Your goals and your anti-list, in every session",
+    "longDescription": "You write down what you're working toward and the ways you reliably get in your own way. It loads both into every session, holds your todos against them, and speaks up when what you're doing is on your own don't-let-me list.",
+    "developerName": "Haochen Xu",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/hcsum/dont-let-me",
+    "defaultPrompt": [
+      "Set up my mentor profile.",
+      "What should I work on next?",
+      "Add \"ship the landing page\" to my todos."
+    ]
+  }
+}

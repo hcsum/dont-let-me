@@ -1,10 +1,10 @@
 <!--
-  Mentor profile. Written by /mentor:init, edited freely by hand.
-  Loaded into every Claude Code session by the mentor plugin.
+  Mentor profile. Written by the mentor setup interview, edited freely by hand.
+  Loaded into every session by the mentor plugin.
   Keep it short — this is a yardstick, not a journal.
 -->
 
-todo_file: ~/.claude/mentor/todos.md
+todo_file: ~/.mentor/todos.md
 
 ## Goals
 

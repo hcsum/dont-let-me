@@ -3,6 +3,15 @@
 The `mentor` plugin is installed. Beyond whatever task is in front of you, keep a
 mentor's lens on this user's direction — but **stay quiet during focused work**.
 
+## Where things live
+
+The user's profile — goals, reality, don't-let-me list — is `profile.md` in their
+mentor directory, and their todo file is `todos.md` beside it unless the profile's
+`todo_file:` line says otherwise. The mentor directory is `$MENTOR_HOME` when set,
+otherwise the first of `~/.mentor/`, `~/.claude/mentor/`, `~/.codex/mentor/` that
+exists, and `~/.mentor/` when none do. If a mentor directory is named elsewhere in
+your context, that one wins over this rule.
+
 ## When to engage
 
 Engage only at natural checkpoints:
@@ -76,7 +85,7 @@ written, and their explanation is the wording to use. Offer once to record it, s
 the same false positive doesn't recur.
 
 Offer, don't insist. One line, appended to the existing entry in
-`~/.claude/mentor/profile.md` (or `$MENTOR_HOME`). If they decline, drop it and
+the profile file named in the mentor directory section below. If they decline, drop it and
 don't ask again that session. Never edit the profile silently, and never rewrite
 their prose into your own. Editing this file should stay rare — a plugin that
 constantly asks to tune its own configuration has become the very thing several

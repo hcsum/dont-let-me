@@ -1,25 +1,72 @@
 # mentor
 
-A mentor that lives in Claude Code — it knows what you're building toward, and
-how you get in your own way.
+**Turn your agent into a mentor.** It knows what you're working toward, and how
+you get in your own way.
 
 ## Install
 
+<details>
+<summary><strong>Claude Code</strong></summary>
+
+```bash
+claude plugin marketplace add hcsum/dont-let-me
+claude plugin install mentor@dont-let-me
 ```
-/plugin marketplace add hcsum/dont-let-me
-/plugin install mentor@dont-let-me
-/mentor:init
+
+Then run `/mentor:init` to set up your profile, and `/mentor:check` any time you
+want the alignment check on demand.
+
+</details>
+
+<details>
+<summary><strong>Codex</strong></summary>
+
+```bash
+codex plugin marketplace add hcsum/dont-let-me --ref main
+codex plugin add mentor@dont-let-me
 ```
+
+Then run `$mentor-init` to set up your profile, and `$mentor-check` any time you
+want the alignment check on demand.
+
+Codex makes you trust a hook before it runs: open `/hooks`, review the
+SessionStart entry, trust it. Until you do, the profile never loads.
+
+</details>
+
+<details>
+<summary><strong>OpenCode</strong></summary>
+
+OpenCode has no plugin marketplace for this, so clone it and point the config at
+the two pieces:
+
+```bash
+git clone https://github.com/hcsum/dont-let-me.git ~/.mentor/plugin
+```
+
+```json
+// ~/.config/opencode/opencode.json
+{
+  "instructions": ["~/.mentor/plugin/stance.md", "~/.mentor/profile.md"],
+  "skills": { "paths": ["~/.mentor/plugin/skills"] }
+}
+```
+
+Then run `/mentor-init` to set up your profile, and `/mentor-check` any time you
+want the alignment check on demand. 
+
+</details>
 
 ## 1. It interviews you
 
-`/mentor:init` asks you questions, one at a time, for about ten minutes. Two
-things come out of it.
+Setup asks you questions, one at a time, for about ten minutes. Run `/mentor:init`
+in Claude Code, `$mentor-init` in Codex, `/mentor-init` in OpenCode. Two things
+come out of it.
 
-**Your long-term goals** — what you're actually building toward. It pushes back
-if you answer vaguely.
+**Your long-term goals.** What you're actually working toward. It pushes back if
+you answer vaguely.
 
-**Your anti-patterns** — the ways you reliably get in your own way, written down
+**Your anti-patterns.** The ways you reliably get in your own way, written down
 while you're still honest about them, so it can hold you to them later when
 you're not:
 
@@ -52,32 +99,31 @@ Mention something in passing and it's kept. It then files each item against your
 ## 3. And it speaks up on its own
 
 It loads into every session and reads along while you do unrelated work. When
-what you're doing is on your own don't-let-me list, it says so — once per
-pattern, and you can wave it off.
+what you're doing is on your own don't-let-me list, it says so, once per pattern.
+You can wave it off.
 
 It also watches what's not moving. Items that keep carrying over day after day
 get treated as avoidance, not as a scheduling problem.
 
-`/mentor:check` if you want the alignment check now instead of waiting to be
-noticed.
+Ask for the alignment check any time instead of waiting to be noticed:
+`/mentor:check`, `$mentor-check`, or just asking for one.
 
 ## Who it's for
 
-Probably most useful if you have ADHD tendencies, or something near them — you
+Probably most useful if you have ADHD tendencies, or something near them. You
 fall into rabbit holes and can't climb out, you start five things and finish
 none. That's what I built it around.
 
-It works best if Claude Code is already where your work starts — research,
-writing, coding, planning a video — because then it sees what you actually did,
-not just what you told it. If it isn't, it still works; it just runs on what you
-tell it.
+It works best if the agent is already where your work starts (research, writing,
+coding, planning a video), because then it sees what you actually did, not just
+what you told it. If it isn't, it still works. It just runs on what you tell it.
 
 ## Something it has said to me
 
 > You've been on this dot for an hour. Fiddling with your setup is on your own
 > don't-let-me list. Which of your three goals does it serve?
 
-I was tuning one dot in my shell prompt — the indicator that tells me whether my
+I was tuning one dot in my shell prompt, the indicator that tells me whether my
 proxy is on. First the colour, then the size, then whether it should be hollow
 or filled. I knew the answer. Knowing it and having something say it out loud
 are different things.
@@ -85,20 +131,22 @@ are different things.
 ## Files
 
 ```
-~/.claude/mentor/profile.md   your goals, your reality, your don't-let-me list
-~/.claude/mentor/todos.md     the todo surface (path configurable in profile.md)
+~/.mentor/profile.md   your goals, your reality, your don't-let-me list
+~/.mentor/todos.md     the todo surface (path configurable in profile.md)
 ```
 
 Plain markdown on your machine. Nothing is sent anywhere, and nothing is written
-to your `CLAUDE.md` — uninstalling leaves no trace but those two files. Set
-`MENTOR_HOME` to relocate them.
+to your `CLAUDE.md` or `AGENTS.md`. Uninstalling leaves no trace but those two
+files. Set `MENTOR_HOME` to relocate them. Otherwise the first existing directory
+wins (`~/.mentor/`, then `~/.claude/mentor/`, then `~/.codex/mentor/`), so every
+agent resolves to the same profile. If more than one exists, the earlier one wins
+and the others are ignored; set `MENTOR_HOME` if that's not what you want.
 
 ## Using another agent
 
-The packaging is Claude Code specific; the content isn't. `stance.md` plus your
-`profile.md` pasted into an `AGENTS.md` gets you most of the way in Codex or
-OpenCode — you just lose `/mentor:init` and the todo skill's automatic
-triggering.
+Nothing here is specific to the three above. `stance.md` plus your `profile.md`
+pasted into an `AGENTS.md` gets you most of the way anywhere else. You lose the
+setup interview and the todo skill's automatic triggering.
 
 ---
 

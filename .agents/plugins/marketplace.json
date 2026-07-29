@@ -1,0 +1,21 @@
+{
+  "name": "dont-let-me",
+  "interface": {
+    "displayName": "Don't let me"
+  },
+  "plugins": [
+    {
+      "name": "mentor",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hcsum/dont-let-me.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
