@@ -146,11 +146,9 @@ wins (`~/.mentor/`, then `~/.claude/mentor/`, then `~/.codex/mentor/`), so every
 agent resolves to the same profile. If more than one exists, the earlier one wins
 and the others are ignored; set `MENTOR_HOME` if that's not what you want.
 
-## Using another agent
+## Using another agent?
 
-Nothing here is specific to the three above. `stance.md` plus your `profile.md`
-pasted into an `AGENTS.md` gets you most of the way anywhere else. You lose the
-setup interview and the todo skill's automatic triggering.
+Just give the link of this repo to your agent and ask it to figure out how to install. 
 
 ---
 
