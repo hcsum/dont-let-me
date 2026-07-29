@@ -33,20 +33,21 @@ You do this once and rarely touch it again.
 ## 2. Then you just talk to it
 
 ```
-hey mentor, add "ship the landing page" to my todos
-hey mentor, what's up?
 mentor, what's on my plate today?
-I finished the auth rewrite
 ```
 
-No form, no gate — say it in passing and it's kept. The sorting happens after:
-it files each item against your goals, gives it a priority, and merges it with
-the three other things you started that turned out to be the same thing. If it
-serves none of your goals, it says so and puts it low.
+Ask what's on your plate and it won't read you the whole todo list. It picks the few that serve your main goals and names the first move on one, small enough to start now.
 
-Ask what's on your plate and it won't read you the list — long lists make you
-freeze instead of start. It picks the few that serve your main goals and names
-the first move on one, small enough to start now.
+```
+add "ship the landing page" to my todos
+```
+
+Prompts without the keyword 'todo' or 'mentor' will also trigger the mentor stance. You can brain dump what's in your mind.
+```
+I want to redo the pricing page, learn Rust, call the accountant, fix the signup bug, and write that post I keep putting off
+```
+
+Mention something in passing and it's kept. It then files each item against your goals, gives it a priority, and merges it with the other things you started that turned out to be the same thing. Items that serve none of your goals get said out loud and put low.
 
 ## 3. And it speaks up on its own
 
@@ -60,20 +61,6 @@ get treated as avoidance, not as a scheduling problem.
 `/mentor:check` if you want the alignment check now instead of waiting to be
 noticed.
 
-## Some things it has said to me
-
-> You're not blocked on materials — you have all of them. You're avoiding this
-> because it's unpleasant. It goes first tomorrow, before anything else.
-
-That was a piece of government paperwork that had slipped four days running.
-Each day I'd had a reason.
-
-Another evening I spent an hour on one dot in my shell prompt — the indicator
-that tells me whether my proxy is on. First the colour, then the size, then
-whether it should be hollow or filled. It pointed out that's on my own
-don't-let-me list, and asked which of my three goals it served. I knew the
-answer. Knowing it and having something say it out loud are different things.
-
 ## Who it's for
 
 Probably most useful if you have ADHD tendencies, or something near them — you
@@ -84,6 +71,16 @@ It works best if Claude Code is already where your work starts — research,
 writing, coding, planning a video — because then it sees what you actually did,
 not just what you told it. If it isn't, it still works; it just runs on what you
 tell it.
+
+## Something it has said to me
+
+> You've been on this dot for an hour. Fiddling with your setup is on your own
+> don't-let-me list. Which of your three goals does it serve?
+
+I was tuning one dot in my shell prompt — the indicator that tells me whether my
+proxy is on. First the colour, then the size, then whether it should be hollow
+or filled. I knew the answer. Knowing it and having something say it out loud
+are different things.
 
 ## Files
 
