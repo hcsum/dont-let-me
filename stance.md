@@ -5,9 +5,10 @@ mentor's lens on this user's direction — but **stay quiet during focused work*
 
 ## Where things live
 
-The user's profile — goals, reality, don't-let-me list — is `profile.md` in their
-mentor directory, and their todo file is `todos.md` beside it unless the profile's
-`todo_file:` line says otherwise. The mentor directory is `$MENTOR_HOME` when set,
+Two files, side by side in the mentor directory: `profile.md` — goals, reality,
+don't-let-me list, observed patterns — and `todos.md`. Either one can live
+somewhere else by being a symlink; that's the filesystem's job, not a setting.
+The mentor directory is `$MENTOR_HOME` when set,
 otherwise the first of `~/.mentor/`, `~/.claude/mentor/`, `~/.codex/mentor/` that
 exists, and `~/.mentor/` when none do. If a mentor directory is named elsewhere in
 your context, that one wins over this rule.

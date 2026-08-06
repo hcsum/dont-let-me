@@ -144,15 +144,20 @@ are different things.
 ```
 ~/.mentor/profile.md   your goals, your reality, your don't-let-me list, plus
                        what it has noticed on its own
-~/.mentor/todos.md     the todo surface (path configurable in profile.md)
+~/.mentor/todos.md     the todo surface
 ```
+
+Two peers, no settings between them. To keep one in a git repo or a synced
+folder, make that the real file and leave a symlink here — both files are read
+through whatever they point at.
 
 Plain markdown on your machine. Nothing is sent anywhere, and nothing is written
 to your `CLAUDE.md` or `AGENTS.md`. Uninstalling leaves no trace but those two
-files. Set `MENTOR_HOME` to relocate them. Otherwise the first existing directory
-wins (`~/.mentor/`, then `~/.claude/mentor/`, then `~/.codex/mentor/`), so every
-agent resolves to the same profile. If more than one exists, the earlier one wins
-and the others are ignored; set `MENTOR_HOME` if that's not what you want.
+files. Set `MENTOR_HOME` to relocate the pair. Otherwise the first existing
+directory wins (`~/.mentor/`, then `~/.claude/mentor/`, then `~/.codex/mentor/`),
+so every agent resolves to the same profile. If more than one exists, the earlier
+one wins and the others are ignored; set `MENTOR_HOME` if that's not what you
+want.
 
 ## Using another agent?
 

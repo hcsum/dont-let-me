@@ -138,9 +138,10 @@ Use the plugin's `templates/profile.md` as the structure — it sits at
 `${CLAUDE_PLUGIN_ROOT}/templates/profile.md` when that variable is set, and two
 directories up from this file otherwise. Note its section order is Goals,
 Reality, Don't let me, which is the order that reads best, not the order you
-asked in. Preserve the `todo_file:` line, pointed at `todos.md` in the same
-directory as the profile; ask where they want it if they'd rather put it
-elsewhere.
+asked in. The todo file is `todos.md` beside the profile — there is no setting
+for it. If they want either file kept somewhere else (a notes repo, a synced
+folder), say so plainly: make that path the real file and leave a symlink in the
+mentor directory.
 
 The template's fourth section, Observed patterns, is **not part of the
 interview** — leave it empty with its comment intact. It's the agent's section,

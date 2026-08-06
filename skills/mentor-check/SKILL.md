@@ -10,8 +10,8 @@ everything else about tone does.
 If they described what they've been working on when they asked, use that.
 Otherwise, gather evidence before judging:
 
-- read their todo file (the path given in the mentor context injected at session
-  start, or the profile's `todo_file:` line)
+- read their todo file (`todos.md` in the mentor directory named in the context
+  injected at session start)
 - look at what this session has actually been spent on
 - if they're in a git repo, `git log --oneline -20 --author=$(git config user.email)`
   is a cheap read on where the last stretch of effort went

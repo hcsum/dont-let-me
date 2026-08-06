@@ -1,10 +1,9 @@
 <!--
   Mentor profile. Written by the mentor setup interview, edited freely by hand.
-  Loaded into every session by the mentor plugin.
+  Loaded into every session by the mentor plugin. Its sibling in this directory
+  is todos.md; to keep either file somewhere else, make it a symlink.
   Keep it short — this is a yardstick, not a journal.
 -->
-
-todo_file: ~/.mentor/todos.md
 
 ## Goals
 

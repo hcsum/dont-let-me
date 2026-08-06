@@ -27,7 +27,7 @@ STANCE="${CLAUDE_PLUGIN_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}/
 [ -r "$STANCE" ] || exit 0
 
 body="$(cat "$STANCE")"
-body+=$'\n\n---\n\n# Mentor directory\n\nThis user\'s mentor directory is `'"$MENTOR_DIR"$'`. The profile lives at\n`'"$PROFILE"$'` and the todo file defaults to `'"$MENTOR_DIR"$'/todos.md` unless the\nprofile\'s `todo_file:` line says otherwise. Use these paths, not any default\nmentioned elsewhere.'
+body+=$'\n\n---\n\n# Mentor directory\n\nThis user\'s mentor directory is `'"$MENTOR_DIR"$'`. Its two files are the profile\nat `'"$PROFILE"$'` and the todo file at `'"$MENTOR_DIR"$'/todos.md`. Either may be a\nsymlink pointing elsewhere; follow it without comment. Use these paths, not any\ndefault mentioned elsewhere.'
 
 if [ -r "$PROFILE" ]; then
   body+=$'\n\n---\n\n# This user\'s profile\n\nThe user wrote this themselves during mentor setup. It is the yardstick for the\nstance above — if they ask to change a goal, edit a shortcoming, or add to the\ndon\'t-let-me list, edit the profile file directly.\n\n'
