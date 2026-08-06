@@ -61,3 +61,27 @@ todo_file: ~/.mentor/todos.md
 -->
 
 - [theme] ...
+
+## Observed patterns
+
+<!--
+  The one section you don't write. Everything above is yours; this is what the
+  agent has watched repeat and turned into something it can act on.
+
+  It starts empty and stays empty until there's something real — nothing goes in
+  here during setup, because the whole point is that these can only come from
+  use. You never have to maintain it. Delete an entry you disagree with and it
+  stays deleted.
+
+  Each entry is one line for the pattern plus the criterion that lets the agent
+  recognise it next time — without that second half it's an anecdote, not
+  something it can act on:
+
+    - going quiet right after a win: the risky window is the 24-48h after a
+      positive signal (a star, an upvote, a reply, a client saying yes), not
+      after a failure. criterion: they start tweaking config or opening a new
+      research thread straight after good news — assume this before assuming
+      genuine new interest.
+-->
+
+- ...

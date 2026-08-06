@@ -142,6 +142,12 @@ asked in. Preserve the `todo_file:` line, pointed at `todos.md` in the same
 directory as the profile; ask where they want it if they'd rather put it
 elsewhere.
 
+The template's fourth section, Observed patterns, is **not part of the
+interview** — leave it empty with its comment intact. It's the agent's section,
+filled in later from watching them work, and asking for it cold produces exactly
+the invented generalities that `signal` and `unless` are kept out of the
+interview to avoid.
+
 Write it in **their own words**, not cleaned-up coaching language — they have to
 recognize themselves in it a year from now.
 

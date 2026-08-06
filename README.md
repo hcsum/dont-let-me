@@ -109,6 +109,13 @@ You can wave it off.
 It also watches what's not moving. Items that keep carrying over day after day
 get treated as avoidance, not as a scheduling problem.
 
+One section of the profile it writes itself. When the same thing happens a second
+or third time and nothing you wrote saw it coming, it adds a line under
+`## Observed patterns` — what the pattern is, and what it will watch for next
+time. You don't maintain that section, and you can delete anything you disagree
+with. It won't move an entry up into your don't-let-me list on its own; that list
+stays your own writing about yourself, which is where its authority comes from.
+
 Ask for the alignment check any time instead of waiting to be noticed:
 `/mentor:check`, `$mentor-check`, or just asking for one.
 
@@ -135,7 +142,8 @@ are different things.
 ## Files
 
 ```
-~/.mentor/profile.md   your goals, your reality, your don't-let-me list
+~/.mentor/profile.md   your goals, your reality, your don't-let-me list, plus
+                       what it has noticed on its own
 ~/.mentor/todos.md     the todo surface (path configurable in profile.md)
 ```
 
