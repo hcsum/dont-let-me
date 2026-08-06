@@ -1,9 +1,17 @@
-# mentor
+**English** · [简体中文](README.zh-CN.md)
+
+# don't let me
 
 **Turn your agent into a mentor.** It knows what you're working toward, and how
 you get in your own way.
 
 ## Install
+
+Tell your agent: 
+
+`install this plugin: https://github.com/hcsum/dont-let-me`
+
+or follow:
 
 <details>
 <summary><strong>Claude Code</strong></summary>
@@ -38,22 +46,53 @@ SessionStart entry, trust it. Until you do, the profile never loads.
 <summary><strong>OpenCode</strong></summary>
 
 OpenCode has no plugin marketplace for this, so clone it and point the config at
-the two pieces:
+the pieces OpenCode knows how to load.
 
 ```bash
 git clone https://github.com/hcsum/dont-let-me.git ~/.mentor/plugin
 ```
 
+Load the mentor stance and skills:
+
 ```json
 // ~/.config/opencode/opencode.json
 {
+  "$schema": "https://opencode.ai/config.json",
   "instructions": ["~/.mentor/plugin/stance.md", "~/.mentor/profile.md"],
   "skills": { "paths": ["~/.mentor/plugin/skills"] }
 }
 ```
 
-Then run `/mentor-init` to set up your profile, and `/mentor-check` any time you
-want the alignment check on demand. 
+OpenCode does not load commands from arbitrary external directories, so install
+the two command entry points into OpenCode's global command directory:
+
+```bash
+mkdir -p ~/.config/opencode/commands
+cat > ~/.config/opencode/commands/mentor-init.md <<'EOF'
+---
+description: Set up your mentor profile — goals, reality, and your own don't-let-me list
+---
+
+Use the `mentor-init` skill and follow it exactly.
+
+$ARGUMENTS
+EOF
+
+cat > ~/.config/opencode/commands/mentor-check.md <<'EOF'
+---
+description: Hold what you've actually been doing up against your goals and your don't-let-me list
+---
+
+Use the `mentor-check` skill and follow it exactly.
+
+If the user passed anything below, treat it as their own account of what they've been working on.
+
+$ARGUMENTS
+EOF
+```
+
+Then restart OpenCode. Run `/mentor-init` to set up your profile, and
+`/mentor-check` any time you want the alignment check on demand.
 
 </details>
 
@@ -129,16 +168,6 @@ It works best if the agent is already where your work starts (research, writing,
 coding, planning a video), because then it sees what you actually did, not just
 what you told it. If it isn't, it still works. It just runs on what you tell it.
 
-## Something it has said to me
-
-> You've been on this dot for an hour. Fiddling with your setup is on your own
-> don't-let-me list. Which of your three goals does it serve?
-
-I was tuning one dot in my shell prompt, the indicator that tells me whether my
-proxy is on. First the colour, then the size, then whether it should be hollow
-or filled. I knew the answer. Knowing it and having something say it out loud
-are different things.
-
 ## Files
 
 ```
@@ -147,10 +176,6 @@ are different things.
 ~/.mentor/todos.md     the todo surface
 ```
 
-Two peers, no settings between them. To keep one in a git repo or a synced
-folder, make that the real file and leave a symlink here — both files are read
-through whatever they point at.
-
 Plain markdown on your machine. Nothing is sent anywhere, and nothing is written
 to your `CLAUDE.md` or `AGENTS.md`. Uninstalling leaves no trace but those two
 files. Set `MENTOR_HOME` to relocate the pair. Otherwise the first existing
@@ -158,10 +183,6 @@ directory wins (`~/.mentor/`, then `~/.claude/mentor/`, then `~/.codex/mentor/`)
 so every agent resolves to the same profile. If more than one exists, the earlier
 one wins and the others are ignored; set `MENTOR_HOME` if that's not what you
 want.
-
-## Using another agent?
-
-Just give the link of this repo to your agent and ask it to figure out how to install. 
 
 ---
 
