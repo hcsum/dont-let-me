@@ -102,7 +102,7 @@ better results with Claude.
 
 ## 1. It interviews you
 
-Setup asks you questions, one at a time, for about ten minutes. Run `/mentor:init`
+Setup asks you two or three questions. Run `/mentor:init`
 in Claude Code, `$mentor-init` in Codex, `/mentor-init` in OpenCode. Two things
 come out of it.
 
